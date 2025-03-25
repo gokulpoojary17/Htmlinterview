@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading">YAY! ITS BOGO</div>
+    <div class="card" onclick="toggleCard(this)">
+        <div class="header">
+            <strong>
+                <input style="color: #d63384;" type="radio" name="unit" class="radio"> Unit 1 
+                <span class="offer">20% OFF</span>
+            </strong>
+            <div class="price-container">
+                <div class="price">$30</div>
+                <div class="old-price">$233.00 USD</div>
+            </div>        
+        </div>
+    
+        <div class="dropdowns">
+            <!-- Row for Headings -->
+            <div class="dropdown-row">
+                <h3>Size</h3>
+                <h3>Color</h3>
+            </div>
+    
+            <!-- Row for Dropdowns #1 -->
+            <div class="dropdown-row">
+                <div class="dropdown-container">
+                    <label for="size1">#1</label>
+                    <select id="size1">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </div>
+                <div class="dropdown-container">
+                    <!-- <label for="color1">#1</label> -->
+                    <select id="color1">
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Green</option>
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Row for Dropdowns #2 -->
+            <div class="dropdown-row">
+                <div class="dropdown-container">
+                    <label for="size2">#2</label>
+                    <select id="size2">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </div>
+                <div class="dropdown-container">
+                    <!-- <label for="color2">#2</label> -->
+                    <select id="color2">
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Green</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="most-popular-label">Most Popular</div> <!-- Label added here -->
+
+        <div class="header">
+            <strong><input type="radio" name="unit" class="radio">Unit 2 <span class="offer">25% OFF</span></strong>
+            <div class="price-container">
+                <div class="price">$60</div>
+                <div class="old-price">$203.00 USD</div>
+            </div>        </div>
+            <div class="dropdowns">
+                <!-- Row for Headings -->
+                <div class="dropdown-row">
+                    <h3>Size</h3>
+                    <h3>Color</h3>
+                </div>
+        
+                <!-- Row for Dropdowns #1 -->
+                <div class="dropdown-row">
+                    <div class="dropdown-container">
+                        <label for="size1">#1</label>
+                        <select id="size1">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <!-- <label for="color1">#1</label> -->
+                        <select id="color1">
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <!-- Row for Dropdowns #2 -->
+                <div class="dropdown-row">
+                    <div class="dropdown-container">
+                        <label for="size2">#2</label>
+                        <select id="size2">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <!-- <label for="color2">#2</label> -->
+                        <select id="color2">
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+        <div class="header">
+            <strong><input type="radio" name="unit" class="radio">Unit 3 <span class="offer">30% OFF</span></strong>
+            <div class="price-container">
+                <div class="price">$90</div>
+                <div class="old-price">$983.00 USD</div>
+            </div>
+        </div>
+        <div class="dropdowns">
+            <!-- Row for Headings -->
+            <div class="dropdown-row">
+                <h3>Size</h3>
+                <h3>Color</h3>
+            </div>
+    
+            <!-- Row for Dropdowns #1 -->
+            <div class="dropdown-row">
+                <div class="dropdown-container">
+                    <label for="size1">#1</label>
+                    <select id="size1">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </div>
+                <div class="dropdown-container">
+                    <!-- <label for="color1">#1</label> -->
+                    <select id="color1">
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Green</option>
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Row for Dropdowns #2 -->
+            <div class="dropdown-row">
+                <div class="dropdown-container">
+                    <label for="size2">#2</label>
+                    <select id="size2">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </div>
+                <div class="dropdown-container">
+                    <!-- <label for="color2">#2</label> -->
+                    <select id="color2">
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Green</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="delivery">Free Delivery</p>
+            <p class="total-price">Total: <span id="totalPrice">$0.00 USD</span></p>
+            
+
+        </div>
+
+    </div>
+
+
+    <button class="add-to-cart-btn" onclick="addToCart()">+ Add to Cart</button>
+    <script src="script.js"></script>
+
+</body>
+</html>
